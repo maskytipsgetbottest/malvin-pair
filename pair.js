@@ -77,7 +77,7 @@ var randomItem = selectRandomItem(items);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
                         let md = "masky~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*️Do not share this id with anybody⚠️
+                        let desc = `*️Do not share this id with anybody
  
 ┌┤✑  Thanks for using 𝐌𝐚𝐬𝐤𝐲_X𝐃
 │└────────────┈ ⳹        
