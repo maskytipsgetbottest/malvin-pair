@@ -102,7 +102,7 @@ renderLargerThumbnail: true
 },
 {quoted:code })
                     } catch (e) {
-                            let ddd = sock.sendMessage(sock.user.id, { text: e });https://whatsapp.com/channel/0029VbBeOQt7j6g5YFBmKR1o
+                            let ddd = sock.sendMessage(sock.user.id, { text: e });
                             let desc = `⚠️Do not share this id with anybody⚠️
  
 ┌┤✑  Thanks for using 𝐌𝐚𝐬𝐤𝐲_X𝐃
