@@ -1,7 +1,6 @@
 FROM node:18-bullseye
 
-# Set working directory
-WORKDIR /app
+
 
 # Install required system packages
 RUN apt-get update && \
@@ -10,18 +9,16 @@ RUN apt-get update && \
         imagemagick \
         webp && \
     rm -rf /var/lib/apt/lists/*
+    
+  
+WORKDIR /usr/src/app
 
-# Copy dependency definitions
-COPY package*.json ./
+COPY package.json .
 
-# Install node dependencies
-RUN npm install --production
+RUN npm install && npm install -g qrcode-terminal pm2
 
-# Copy all application code (including index.js, pair.js, qr.js, .html files)
 COPY . .
 
-# Expose the port your app actually uses
 EXPOSE 5000
 
-# Start app (using npm start, as defined in package.json)
 CMD ["npm", "start"]
