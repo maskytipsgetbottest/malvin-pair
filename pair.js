@@ -75,36 +75,38 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "malvin~" + string_session;
+                        let md = "masky~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hey there, MALVIN-XD User!* 👋🏻
+                        let desc = `*️Do not share this id with anybody⚠️
+ 
+┌┤✑  Thanks for using 𝐌𝐚𝐬𝐤𝐲_X𝐃
+│└────────────┈ ⳹        
+│©2024 𝐌𝐚𝐬𝐤𝐲 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐓𝐞𝐜𝐡
+└─────────────────┈ ⳹
 
-Thanks for using *MALVIN-XD* — your session has been successfully created!
+🎬 *MASKY XD V2.0 Full Setup Guide!*
 
-🔐 *Session ID:* Sent above  
-⚠️ *Keep it safe!* Do NOT share this ID with anyone.
-
-——————
+🚀 Bug Fixes + New Commands + Fast AI Chat
+📺 Watch Now: https://youtu.be/CA7CfI-8Gpk ✌🏻
 
 *✅ Stay Updated:*  
 Join our official WhatsApp Channel:  
-https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
-
+https://whatsapp.com/channel/0029VbBeOQt7j6g5YFBmKR1o
 *💻 Source Code:*  
 Fork & explore the project on GitHub:  
-https://github.com/XdKing2/MALVIN-XD
+https://github.com/MaskyOfficialTech/MASKY-XD_V2
 
 ——————
 
-> *© Powered by Malvin King*
-Stay cool and hack smart. ✌🏻`; 
+> *© Powered by 𝐌𝐚𝐬𝐤𝐲 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐓𝐞𝐜𝐡*
+deploy bot for 😊. ✌🏻`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
 title: "ᴍᴀʟᴠɪɴ-xᴅ",
 thumbnailUrl: "https://files.catbox.moe/bqs70b.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A",
+sourceUrl: "https://whatsapp.com/channel/0029VbBeOQt7j6g5YFBmKR1o",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -113,34 +115,36 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `Hey there, MALVIN-XD User!* 👋🏻
+                            let desc =  `*️Do not share this id with anybody⚠️
+ 
+┌┤✑  Thanks for using 𝐌𝐚𝐬𝐤𝐲_X𝐃
+│└────────────┈ ⳹        
+│©2024 𝐌𝐚𝐬𝐤𝐲 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐓𝐞𝐜𝐡
+└─────────────────┈ ⳹
 
-Thanks for using *MALVIN-XD* — your session has been successfully created!
+🎬 *MASKY XD V2.0 Full Setup Guide!*
 
-🔐 *Session ID:* Sent above  
-⚠️ *Keep it safe!* Do NOT share this ID with anyone.
-
-——————
+🚀 Bug Fixes + New Commands + Fast AI Chat
+📺 Watch Now: https://youtu.be/CA7CfI-8Gpk ✌🏻
 
 *✅ Stay Updated:*  
 Join our official WhatsApp Channel:  
-https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
-
+https://whatsapp.com/channel/0029VbBeOQt7j6g5YFBmKR1o
 *💻 Source Code:*  
 Fork & explore the project on GitHub:  
-https://github.com/XdKing2/MALVIN-XD
+https://github.com/MaskyOfficialTech/MASKY-XD_V2
 
 ——————
 
-> *© Powered by Malvin King*
-Stay cool and hack smart. ✌🏻`;
+> *© Powered by 𝐌𝐚𝐬𝐤𝐲 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐓𝐞𝐜𝐡*
+deploy bot for 😊. ✌🏻`; 
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ᴍᴀʟᴠɪɴ-xᴅ",
+title: "MASKY_XD_V2",
 thumbnailUrl: "https://i.imgur.com/GVW7aoD.jpeg",
-sourceUrl: "https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A",
+sourceUrl: "https://whatsapp.com/channel/0029VbBeOQt7j6g5YFBmKR1o",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
