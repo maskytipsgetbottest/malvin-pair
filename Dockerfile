@@ -1,21 +1,27 @@
-FROM node:lts-buster
+FROM node:18-bullseye
 
+# Set working directory
+WORKDIR /app
+
+# Install required system packages
 RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
-  
-WORKDIR /usr/src/app
+    apt-get install -y --no-install-recommends \
+        ffmpeg \
+        imagemagick \
+        webp && \
+    rm -rf /var/lib/apt/lists/*
 
-COPY package.json .
+# Copy dependency definitions
+COPY package*.json ./
 
-RUN npm install && npm install -g qrcode-terminal pm2
+# Install node dependencies
+RUN npm install --production
 
+# Copy all application code (including index.js, pair.js, qr.js, .html files)
 COPY . .
 
+# Expose the port your app actually uses
 EXPOSE 5000
 
+# Start app (using npm start, as defined in package.json)
 CMD ["npm", "start"]
